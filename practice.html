@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>기말고사 작품</title>
+<!-- 1. 초기화 -->
+<style>
+* {
+margin: 0; padding: 0;
+font-family: '맑은 고딕', 'Malgun Gothic', Gothic, sans-serif;
+}
+a { text-decoration: none; }
+li { list-style: none; }
+</style>
+<!-- 기본 클래스 -->
+<style>
+.pull-left { float: left; }
+.pull-right { float:right; }
+</style>
+<!-- 2. 페이지 구성하기 -->
+<style>
+body {
+width: 960px; margin: 0 auto;
+background: #E6E6E6;
+}
+#page-wrapper {
+background: rgb(27, 27, 27);
+margin: 40px 0; padding: 10px 20px;
+border-radius: 5px;
+box-shadow: 0 2px 6px rgba(100, 100, 100, 0.3);
+}
+</style>
+<!-- 3. 헤더 구성하기 -->
+<style>
+#main-header { padding: 40px 50px; }
+.master-title {
+font-family: 'Harry P', sans-serif;
+font-size: 60px;
+color: #ffd700;
+}
+.master-description {
+font-family: '나눔고딕';
+font-size: 13px; font-weight: 500;
+color:  rgb(134, 25, 25);
+}
+</style>
+<!-- 4. 내비게이션 및 풀다운 메뉴 구성하기 -->
+<style>
+#main-navigation {
+border-top: 1px solid #ffffff;
+border-bottom: 1px solid #ffffff;
+margin-bottom: 20px;
+height: 40px;
+}
+.outer-menu-item {
+float: left;
+position: relative;
+}
+.outer-menu-item:hover {
+background: rgb(134, 25, 25);
+color: white
+}
+.menu-title {
+display: block;
+height: 30px; line-height: 30px;
+text-align: center;
+padding: 5px 20px;
+color: #ffffff;
+}
+.inner-menu {
+display: none;
+position: absolute;
+top: 40px; left: 0;
+width: 100%;
+background:rgb(27, 27, 27);
+box-shadow: 0 2px 6px rgba(88, 87, 87, 0.9);
+z-index: 1000;
+text-align: center
+}
+.inner-menu-item > a {
+display: block;
+padding: 5px 10px;
+color: rgb(255, 255, 255)
+}
+.inner-menu-item > a:hover {
+background: rgb(179, 109, 109);
+color: white;
+}
+</style>
+<!-- 5. 검색 양식 추가하기(내비게이션 내부의 검색) -->
+<style>
+.search-bar {
+height: 26px;
+padding: 7px;
+}
+.input-search {
+display: block;
+float: left;
+background-color: #FFFFFF;
+border: 1px solid #CCCCCC;
+border-radius: 15px 0 0 15px;
+box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+width: 120px; height: 24px;
+padding: 0 0 0 10px;
+font-size: 12px;
+color: #555555;
+}
+.input-search:focus {
+border-color: rgba(82, 168, 236, 0.8);
+outline: 0;
+box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+.input-search-submit {
+display: block;
+float: left;
+width: 50px; height: 26px;
+border-radius: 0 15px 15px 0;
+border: 1px solid #CCCCCC;
+margin-left: -1px;
+
+vertical-align: top;
+display: inline-block;
+}
+</style>
+<!-- 6. 본문 추가하기(중앙 내용) -->
+<style>
+/* body 태그의 너비: 960px */
+/* #page-wrapper 태그의 padding 속성으로 내용물 너비는 920px */
+#content { overflow: hidden; }
+#main-section {
+float: left;
+width: 710px;
+color: #ffffff
+}
+#main-aside {
+float: right;
+width: 200px;
+}
+</style>
+<!--6. 본문 추가하기(좌측 내용) -->
+<style>
+article {
+padding: 0 10px 20px 10px;
+border-bottom: 1px solid #C8C8C8;
+}
+.article-header { padding: 20px 0; }
+.article-title {
+font-size: 25px;
+font-weight: 500;
+padding-bottom: 10px;
+}
+.article-date { font-size: 13px; }
+.article-body {
+font-size: 14px;
+
+}
+</style>
+<!-- 6. 본문 추가하기(우측 내용) -->
+<style>
+.aside-list { padding: 10px 0 30px 0; }
+.aside-list > h3 {
+font-size: 15px;
+font-weight: 600;
+color: #ffffff
+}
+
+<style>
+.search-bar {
+height: 26px;
+padding: 7px;
+
+}
+.input-search {
+display: block;
+float: left;
+background-color: #FFFFFF;
+border: 1px solid #CCCCCC;
+border-radius: 15px 0 0 15px;
+box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+width: 120px; height: 24px;
+padding: 0 0 0 10px;
+font-size: 12px;
+color: #555555;
+}
+.input-search:focus {
+border-color: rgba(105, 136, 160, 0.8)
+outline: 0;
+box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+.input-search-submit {
+display: block;
+float: left;
+width: 50px; height: 26px;
+border-radius: 0 15px 15px 0;
+border: 1px solid #CCCCCC;
+margin-left: -1px;
+vertical-align: top;
+
+display: inline-block;
+}
+</style>
+<!-- 중앙 내용 -->
+<style>
+/* body 태그의 너비: 960px */
+/* #page-wrapper 태그의 padding 속성으로 내용물 너비는 920px */
+#content { overflow: hidden; }
+#main-section {
+float: left;
+width: 710px;
+
+}
+#main-aside {
+float: right;
+width: 200px;
+}
+</style>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+</script>
+<script>
+$(document).ready(function () {
+$('.outer-menu-item').hover(function () {
+$(this).find('.inner-menu').show();
+}, function () {
+$(this).find('.inner-menu').hide();
+});
+});
+</script>
+
+</head>
+<body link="#ffd700" vlink="#A4A4A4" alink="#ffd700">
+<div id="page-wrapper">
+<header id="main-header">
+<hgroup>
+<h1 class="master-title">Harry Poter</h1>
+<h2 class="master-description"><b>&nbsp;해리포터와 마법사의 돌</b></h2>
+</hgroup>
+</header>
+<nav id="main-navigation">
+<div class="pull-left">
+<ul class="outer-menu">
+<li class="outer-menu-item">
+<span class="menu-title">기본정보</span>
+<ul class="inner-menu">
+<li class="inner-menu-item"> <a href= "#"> 개봉</a> </li>
+<li class="inner-menu-item"> <a href= "#"> 장르</a> </li>
+<li class="inner-menu-item"> <a href= "#"> 러닝타임</a> </li>
+<li class="inner-menu-item"> <a href= "#"> 배급</a> </li>
+
+</ul>
+</li>
+<li class="outer-menu-item">
+<span class="menu-title">감독/주인공 소개</span>
+<ul class="inner-menu">
+<li class="inner-menu-item"> <a href= "#"> 감독</a> </li>
+<li class="inner-menu-item"> <a href= "#"> 해리포터</a> </li>
+<li class="inner-menu-item"> <a href= "#"> 론 위즐리</a> </li>
+<li class="inner-menu-item"> <a href= "#"> 헤르미온느</a> </li>
+<li class="inner-menu-item"> <a href= "#"> 볼트모트</a> </li>
+</ul>
+</li>
+<li class="outer-menu-item">
+<span class="menu-title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;시리즈&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<ul class="inner-menu">
+<li class="inner-menu-item"> <a href= "#"> 해리포터와<br>마법사의 돌</a> </li>
+<li class="inner-menu-item"> <a href= "#"> 해리포터와<br>비밀의 방</a> </li>
+<li class="inner-menu-item"> <a href= "#"> 해리포터와<br>아즈카반의 죄수</a> </li>
+<li class="inner-menu-item"> <a href= "#"> 해리포터와<br>불의 잔</a> </li>
+<li class="inner-menu-item"> <a href= "#"> 해리포터와<br>불사조 기사단</a> </li>
+<li class="inner-menu-item"> <a href= "#"> 해리포터와<br>혼혈 왕자</a> </li>
+<li class="inner-menu-item"> <a href= "#"> 해리포터와<br>죽음의 성물-1부</a> </li>
+<li class="inner-menu-item"> <a href= "#"> 해리포터와<br>죽음의 성물-2부</a> </li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="pull-right">
+<div class="search-bar">
+<form>
+<input type="text" class="input-search" / >
+<input type="submit" class="input-search-submit" value= "검색" / >
+</form>
+</div>
+</div>
+</nav>
+<div id="content">
+<section id="main-section">
+<article>
+<div class="article-header">
+<h1 class="article-title"><b>해리포터와 마법사의 돌</b></h1>
+</div>
+<div class="article-body">
+<img src="harrypoter.jpg" width="450" >
+<br / >
+<br / >
+<p>해리포터가 아기일 때 해리포터의 부모님은 사악한 마법사인 볼트모트에게 죽임을 당한다. 그렇게 친척</p>
+<br / >
+<p> 집에서 자라게 된 해리포터는 자신이 마법사인 것을 인지하지 못하고 살아가게 된다. 구박을 받으며 자라던 </p>
+<br / >
+<p>도중 11살이 되던 해에 마법학교인 '호그와트'로부터 편지를 받아 호그와트에 들어가기로 결심한다. 런던의</p>
+<br / >
+<p>킹스 크로스 역에 있는 비밀의 9와 3/4 승강장에서 호그와트로 가는 열차를 타고 그 안에서 헤르미온느와</p>
+<br / >
+<p>론 위즐리를 만나 친구가 된다. 그 후 학교에 들어가 여러가지 주문과 신비한 동물들과 함께 지내고, 빗자루를</p>
+<br / >
+<p>타고 날아다니며 경기하는 퀴디치게임에서 활약하게 된다. 그러던 중 학교 지하실에 '마법사의 돌'이 보관되어</p>
+<br / >
+<p>있다는 것을 알게 되고 그 돌을 볼드모트가 노리고 있다는 것을 알게 된다. 해리는 이 마법사의 돌을 지키기</p>
+<br / >
+<p>위하여 노력하고, 결국 돌을 지키게 된다.</p>
+</div>
+</article>
+<article>
+<div class="article-header">
+<h1 class="article-title"><b>MOVIE CLIP</b></h1>
+<p class="article-date">해리포터와 마법사의 돌 중</p>
+</div>
+<div class="article-body">
+    <video controls="controls">
+        <source src="movie_clip.mp4" type="video/mp4">
+    </video>
+<br / >
+<br / >
+<h3>&lt;장면 설명&gt;</h3>
+<br / >
+<p>빗자루 수업을 받고 있던 도중 한 학생이 빗자루 잘 못 타서 떨어지게 되었고 그 학생의 물건이</p>
+<br / >
+<p>떨어지게 된다. 그 떨어진 물건을 말포이가 줍게 되고 그것으로 장난을 치려고 한다. 해리포터가</p>
+<br / >
+<p>장난을 치지 말라고 하자, 말포이는 물건을 가져가보라며 선생님의 허락 없이 빗자루를 타며 허공을</p>
+<br / >
+<p>맴돈다. 그것을 잡으려고 해리포터는 빗자루를 따라서 타게 되고, 해리포터의 예사롭지 않은 빗자루</p>
+<br / >
+<p>운전 실력을 보게 된 '맥고나걸'교수는 해리포터를 퀴디치 게임의 선수로 넣게 되는 계기가 된다.</p>
+</div>
+</article>
+</section>
+<aside id="main-aside">
+<div class="aside-list">
+<h3> 연관 검색어</h3>
+<ul>
+<li> <a href= "#"> 해리포터 작가</a> </li>
+<li> <a href= "#"> 해리포터 명대사</a> </li>
+<li> <a href= "#"> 해리포터 책</a> </li>
+<li> <a href= "#"> 해리포터 시리즈 순서</a> </li>
+<li> <a href= "#"> J.K.롤링</a> </li>
+</ul>
+</div>
+<div class="aside-list">
+<h3> 해리포터 굿즈</h3>
+<ul>
+<li> <a href= "#"> 퍼즐</a> </li>
+<li> <a href= "#"> 에어팟 케이스,키링</a> </li>
+<li> <a href= "#"> 잠옷</a> </li>
+<li> <a href= "#"> 실링왁스 세트</a> </li>
+<li> <a href= "#"> 만년필</a> </li>
+</ul>
+</div>
+</aside>
+</div>
+<footer id="main-footer">
+<a href= "#">Created By 2020261048 이설아</a>
+</footer>
+</div>
+</body>
+</html>
